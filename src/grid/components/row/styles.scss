@@ -1,0 +1,30 @@
+.grid-rows {
+    display: flex;
+
+    div {
+        display: inline-block;
+        border: 1px solid grey;
+        height: 10px;
+        width: 10px;
+        font-size: 10px;
+        background-color: inherit;
+
+        &.active {
+            color: #f7f7f7;
+            background-color: black;
+        }
+        //&:hover {
+        //    cursor: pointer;
+        //}
+    }
+    div + div {
+        border-left-color: transparent;
+        margin-left: -1px;
+    }
+}
+.grid-rows + .grid-rows {
+    div {
+        border-top-color: transparent;
+        margin-top: -1px;
+    }
+}
