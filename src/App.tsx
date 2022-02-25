@@ -7,10 +7,7 @@ function App() {
     return (
         <div className="App">
             <Header title='Game of Life'/>
-
-            <div className='view-wrapper'>
-                <Game/>
-            </div>
+            <Game/>
         </div>
     );
 }

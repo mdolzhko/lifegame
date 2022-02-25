@@ -1,4 +1,4 @@
-export const size = 10;
+export const size = 50;
 
 export const checkCellInGrid = (x: number, y: number, sz: number) => {
     if((x > (sz-1)) || (x < 0)) return false;

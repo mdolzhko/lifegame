@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {updateCellsModel} from './helpers';
 import Button from "../control/button";
 import Grid from "../grid";
+import {updateCellsModel} from './helpers';
+import {size} from "./helpers";
 import './styles.scss';
 
-const size = 50;
 const arr = Array.from(Array(size).keys());
 const randomInt = () => {
     const ran = Math.random();
@@ -13,8 +13,7 @@ const randomInt = () => {
             ? Math.ceil(ran)
             : Math.floor(ran)
     )
-}
-
+};
 const initModel = arr.map((item: number, index: number, array: number[]) => array.map( (_) => randomInt()));
 
 const Index = () => {
@@ -101,7 +100,7 @@ const Index = () => {
     // }
 
     const toggleStart = (): void => setStart(!start);
-    const handleStop = (): void => {
+    const handleStop  = (): void => {
         toggleStart();
         clearInterval(inc.current as ReturnType<typeof setInterval>)
     };
