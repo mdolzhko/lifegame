@@ -12,6 +12,7 @@
 /build
 
 # misc
+.idea/
 *.lock
 .DS_Store
 .env.local
