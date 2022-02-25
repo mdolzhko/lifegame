@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App]
 In the project directory, you can run:
 
 ### `yarn install`
-### `yarn start`
+### `yarn start`: and open page on http://localhost:3000/ 
 ### `yarn test`
 
 ### `yarn build`
